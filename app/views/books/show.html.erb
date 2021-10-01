@@ -1,0 +1,25 @@
+<center>
+<p id="notice"><%= notice %></p>
+
+<table summary='book detail view'>
+  <tr>
+    <strong><th>Title</th></strong>
+    <td><%= @book.title %></td>
+  </tr>
+  <tr>
+    <strong><th>Author</th></strong>
+    <td><%= @book.author %></td>
+  </tr>
+  <tr>
+    <strong><th>Price</th></strong>
+    <td><%= @book.price %></td>
+  </tr>
+  <tr>
+    <strong><th>Date Published</th></strong>
+    <td><%= @book.published %></td>
+  </tr>
+</table>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
+</center>
